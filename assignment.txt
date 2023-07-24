@@ -1,0 +1,14 @@
+Q1. Why dot use with Value Type?
+Q2. What is null value and where we use it? Hint : typeof
+Q3. Typeof ?
+Q4. Null vs undefined
+Q5 . == vs ===
+Q6. Prime Number Compute Function
+Q7. ArmStrong Number Compute Function
+Q8. add() - 0
+add(10) - 10
+add(10,20) - 30
+add(10,”20”) - 30
+add(10,”ten”) - 10
+add(10, NaN) - 10
+add(10, 20, 30 ,40, 50)- 150
