@@ -1,0 +1,188 @@
+var a;
+undefined
+typeof a;
+'undefined'
+a = 100;
+100
+typeof a;
+'number'
+a=1;
+1
+typeof a;
+'number'
+a =1111111111;
+1111111111
+typeof a;
+'number'
+a = 100.20;
+100.2
+typeof a;
+'number'
+a=10/0;
+Infinity
+typeof a;
+'number'
+a= 10-"ten";
+NaN
+typeof NaN;
+'number'
+isNaN(a);
+true
+isNaN(a)?"OOPS Something went Wrong":a;
+'OOPS Something went Wrong'
+a;
+NaN
+a = 10/0;
+Infinity
+isFinite(a)?a:0;
+0
+parseInt("1000");
+1000
+parseFloat("100.20");
+100.2
+a = 100;
+100
+typeof a;
+'number'
+a = "Amit";
+'Amit'
+typeof a;
+'string'
+a='A';
+'A'
+typeof a;
+'string'
+a= "Amit";
+'Amit'
+typeof a;
+'string'
+a = 'Amit';
+'Amit'
+typeof a;
+'string'
+var x = 10;
+undefined
+var y = 20;
+undefined
+y = x;
+10
+x;
+10
+y;
+10
+x + 10;
+20
+x;
+10
+x = x + 10;
+20
+x= 10;
+10
+x * 0.10;
+1
+x;
+10
+var multiLine = `hgkfgkfgjfhdkj
+gdkjhgkjf
+hgdkjf
+gdfhjkhg`;
+undefined
+multiLine;
+'hgkfgkfgjfhdkj\ngdkjhgkjf\nhgdkjf\ngdfhjkhg'
+console.log(multiLine);
+VM1294:1 hgkfgkfgjfhdkj
+gdkjhgkjf
+hgdkjf
+gdfhjkhg
+undefined
+typeof console;
+'object'
+typeof console.log;
+'function'
+x = 10;
+10
+var y = 20;
+undefined
+`X is ${x} and y is ${y}`;
+'X is 10 and y is 20'
+var girlFriend = 'Abc';
+`Dear ${girlFriend}`;
+'Dear Abc'
+girlFriend = 'Xyz';
+'Xyz'
+var girlFriend = 'Abc';
+`Dear ${girlFriend}`;
+'Dear Abc'
+girlFriend = 'Xyz';
+`Dear ${girlFriend}`;
+'Dear Xyz'
+var att = true;
+undefined
+typeof att;
+'boolean'
+10 + true;
+11
+10 + "Amit"
+'10Amit'
+x = 100000000000000000000000;
+1e+23
+typeof x;
+'number'
+x;
+1e+23
+x = Number.MAX_SAFE_INTEGER;
+9007199254740991
+++x;
+9007199254740992
+++x;
+9007199254740992
+++x;
+9007199254740992
+++x;
+9007199254740992
+++x;
+9007199254740992
+typeof x;
+'number'
+x = 9007199254740992n;
+9007199254740992n
+typeof x;
+'bigint'
+++x;
+9007199254740993n
+++x;
+9007199254740994n
+++x;
+9007199254740995n
+++x;
+9007199254740996n
+++x;
+9007199254740997n
+x = x + 534534545345435423n;
+543541744600176420n
+x = x + 432423;
+VM2133:1 Uncaught TypeError: Cannot mix BigInt and other types, use explicit conversions
+    at <anonymous>:1:7
+(anonymous) @ VM2133:1
+x = BigInt("34243234234234324324324324");
+34243234234234324324324324n
+typeof x;
+'bigint'
+typeof BigInt;
+'function'
+undefined == null;
+true
+undefined === null;
+false
+var arr = [10,20,30,40,50];
+undefined
+typeof arr;
+'object'
+arr = null;
+null
+typeof arr;
+'object'
+var t = 100;
+undefined
+t = null;
+null
