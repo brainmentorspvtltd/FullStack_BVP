@@ -1,0 +1,47 @@
+https://dontpad.com/bvpcode
+Data Types (Implicit)
+Immutable Type / Value Type
+a) undefined
+Defined
+b) number - Correct (0-9) , Decimal 
+Error Value (Infinity) (NaN)
+To Treat Error isNaN function
+isFinite 
+Helper Methods -> parseInt, parseFloat, isNaN, isFinite
+c) string
+“Amit”
+‘Amit’
+`` MultiLine String (ES6 - 2015)
+`X is ${x} and y is ${y}` - String Interpolation (ES6)
+
+d) boolean
+
+E) bigint (es2020)
+
+f) null (value)
+
+
+
+
+Implicit Typecasting
+S + N = S
+S +B = S
+N + B =N
+N + NaN = NaN (Number)
+N  + undefined = NaN (number)
+Undefined + undefined = NaN (Number)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
