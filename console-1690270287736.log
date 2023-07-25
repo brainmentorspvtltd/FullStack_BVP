@@ -1,0 +1,218 @@
+var a = 10;
+undefined
+typeof a;
+'number'
+var b = a;
+undefined
+b + 10;
+20
+b;
+10
+b = b + 10;
+20
+var arr = [10,20,30,40];
+undefined
+arr.length;
+4
+arr.push(1000);
+5
+arr;
+(5) [10, 20, 30, 40, 1000]
+var marks = [100, 90, 50, 40, 30];
+undefined
+var smarks = {"ram":100, "shyam":90,"sohan":50};
+undefined
+smarks.ram;
+100
+marks[0];
+100
+marks['ram'];
+undefined
+smarks['ram'];
+100
+var dhoni  = {name:'MS Dhoni', age :40, city:'Delhi', phone:22222, 50: 51,100:11};
+undefined
+typeof dhoni;
+'object'
+dhoni instanceof Object;
+true
+typeof Object;
+'function'
+var arr = [10,20,30];
+undefined
+typeof arr;
+'object'
+typeof dhoni;
+'object'
+arr instanceof Array;
+true
+typeof Array;
+'function'
+dhoni instanceof Array;
+false
+dhoni instanceof Object;
+true
+arr instanceof Array;
+true
+arr instanceof Object;
+true
+var w = {};
+undefined
+var w = new Object();
+undefined
+typeof w;
+'object'
+var q = [];
+undefined
+var q2 = new Array(10);
+undefined
+q2;
+(10) [empty × 10]
+class A{}
+undefined
+typeof A;
+'function'
+Object;
+ƒ Object() { [native code] }
+dhoni;
+{50: 51, 100: 11, name: 'MS Dhoni', age: 40, city: 'Delhi', phone: 22222}
+dhoni.age;
+40
+dhoni.50;
+VM1603:1 Uncaught SyntaxError: Unexpected number
+var dhoni  = {name:'MS Dhoni', age :40, city:'Delhi', phone:22222, 50: 51,100:11, 'full address':'New Delhi'};
+undefined
+dhoni.full address;
+VM1760:1 Uncaught SyntaxError: Unexpected identifier 'address'
+dhoni[50];
+51
+dhoni['age'];
+40
+dhoni['full address'];
+'New Delhi'
+var x = 'age';
+undefined
+dhoni.x;
+undefined
+dhoni[x];
+40
+for(var key in dhoni){
+    console.log(key);
+}
+VM2057:2 50
+VM2057:2 100
+VM2057:2 name
+VM2057:2 age
+VM2057:2 city
+VM2057:2 phone
+VM2057:2 full address
+undefined
+for(var key in dhoni){
+    console.log(key, dhoni[key]);
+}
+VM2110:2 50 51
+VM2110:2 100 11
+VM2110:2 name MS Dhoni
+VM2110:2 age 40
+VM2110:2 city Delhi
+VM2110:2 phone 22222
+VM2110:2 full address New Delhi
+undefined
+var q = [10,20,30,40,50];
+undefined
+for(var i = 0; i<q.length; i++){
+    console.log(q[i]);
+}
+VM2296:2 10
+VM2296:2 20
+VM2296:2 30
+VM2296:2 40
+VM2296:2 50
+undefined
+for(var index in q){
+    console.log(index);
+}
+VM2408:2 0
+VM2408:2 1
+VM2408:2 2
+VM2408:2 3
+VM2408:2 4
+undefined
+for(var index in q){
+    console.log(index, q[index]);
+}
+VM2438:2 0 10
+VM2438:2 1 20
+VM2438:2 2 30
+VM2438:2 3 40
+VM2438:2 4 50
+undefined
+for(var e of q){
+    console.log(e);
+}
+VM2511:2 10
+VM2511:2 20
+VM2511:2 30
+VM2511:2 40
+VM2511:2 50
+undefined
+var x = 1000;
+undefined
+typeof x;
+'number'
+var g = [10,20,30];
+undefined
+typeof g;
+'object'
+var x = 1000;
+undefined
+var t = new Number(1000);
+undefined
+typeof t;
+'object'
+x;
+1000
+t;
+
+Number {1000}
+arr;
+(3) [10, 20, 30]
+arr = null;
+null
+null == undefined;
+true
+typeof null;
+'object'
+typeof undefined;
+'undefined'
+10 == "10";
+true
+10==="10";
+false
+null == undefined;
+true
+null === undefined;
+false
+function add(){
+    console.log(" i am the Add ");
+}
+undefined
+add();
+VM3087:2  i am the Add 
+undefined
+add(10,20);
+VM3087:2  i am the Add 
+undefined
+add(1,2,[90,10], true, "Hello");
+VM3087:2  i am the Add 
+undefined
+console.dir(add);
+VM3296:1 ƒ add()arguments: nullcaller: nulllength: 0name: "add"prototype: {constructor: ƒ}[[FunctionLocation]]: VM3087:1[[Prototype]]: ƒ ()[[Scopes]]: Scopes[2]
+undefined
+function add(){
+    console.log(" i am the Add ", arguments.length);
+}
+undefined
+add(1,2,[90,10], true, "Hello");
+VM3381:2  i am the Add  5
+undefined
