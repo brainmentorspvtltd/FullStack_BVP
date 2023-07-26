@@ -1,0 +1,34 @@
+// Named Function
+one();
+function one(){
+    console.log(" I am the One Function ");
+}
+VM100:4  I am the One Function 
+undefined
+window;
+Window {window: Window, self: Window, document: document, name: '', location: Location, …}
+typeof window;
+'object'
+window.one;
+ƒ one(){
+    console.log(" I am the One Function ");
+}
+//var fn ; // declare 
+fn(); // undefined()
+var fn = function(){
+    console.log("I am the Anonymous Fn ");
+}
+VM323:2 Uncaught TypeError: fn is not a function
+    at <anonymous>:2:1
+(anonymous) @ VM323:2
+function show(){
+    console.log(x);
+var x = 10;
+    var x = 20;
+    var x =30;
+    console.log(x);
+}
+show();
+VM501:2 undefined
+VM501:6 30
+undefined

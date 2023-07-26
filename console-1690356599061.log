@@ -1,0 +1,190 @@
+function show(){
+    console.log(arguments.length);
+}
+show(10,20);
+
+VM173:2 2
+undefined
+show();
+
+VM173:2 0
+undefined
+console.dir(show);
+VM223:1 ƒ show()arguments: nullcaller: nulllength: 0name: "show"prototype: {constructor: ƒ}[[FunctionLocation]]: VM173:1[[Prototype]]: ƒ ()[[Scopes]]: Scopes[1]
+undefined
+function disp(...a){
+    console.log(a instanceof Array, arguments instanceof Array);
+}
+undefined
+disp(10,20,30);
+VM458:2 true false
+undefined
+var arr = [10,20,30];
+undefined
+typeof arr;
+'object'
+arr instanceof Array;
+true
+typeof Array;
+'function'
+arr instanceof Object;
+true
+function disp(...a, ...b){
+    console.log(a instanceof Array, arguments instanceof Array);
+}
+VM787:1 Uncaught SyntaxError: Rest parameter must be last formal parameter
+function disp(x,y, z, ...a){
+   console.log(x, y, z , a);
+}
+undefined
+disp(100,200,300,100,200,300,400);
+VM881:2 100 200 300 (4) [100, 200, 300, 400]
+undefined
+function disp(x,y, z, ...a){
+    for(var i of a){
+        console.log(i);
+    }
+   //console.log(x, y, z , a);
+}
+undefined
+disp(1,2,3,100,200,300);
+VM1147:3 100
+VM1147:3 200
+VM1147:3 300
+undefined
+var t = [10,20,30];
+undefined
+var g = t;
+undefined
+t === g;
+true
+g[0] =11111;
+11111
+g;
+(3) [11111, 20, 30]
+t;
+(3) [11111, 20, 30]
+var h = [...g];
+undefined
+h === g;
+false
+g;
+(3) [11111, 20, 30]
+h;
+(3) [11111, 20, 30]
+h[0] = 2222;
+2222
+h;
+(3) [2222, 20, 30]
+g;
+(3) [11111, 20, 30]
+var prices  = [100,200,300,400];
+undefined
+function add(x,y){
+    return x + y;
+}
+undefined
+add(10,20);
+30
+add();
+NaN
+function add(x=0,y=0){
+    return x + y;
+}
+undefined
+add();
+0
+add(10);
+10
+add(10,20);
+30
+var arr = [10,20,30];
+undefined
+arr.length;
+3
+arr = null;
+null
+arr.length;
+VM1990:1 Uncaught TypeError: Cannot read properties of null (reading 'length')
+    at <anonymous>:1:5
+(anonymous) @ VM1990:1
+if(arr!=null){
+    console.log(arr.length);
+}
+undefined
+arr = undefined;
+undefined
+arr.length;
+VM2151:1 Uncaught TypeError: Cannot read properties of undefined (reading 'length')
+    at <anonymous>:1:5
+(anonymous) @ VM2151:1
+if(arr){
+    console.log(arr.length);
+}
+else{
+    console.log("No Array Exist");
+}
+VM2300:5 No Array Exist
+undefined
+arr;
+undefined
+arr= [10,20];
+(2) [10, 20]
+if(arr){
+    console.log(arr.length);
+}
+else{
+    console.log("No Array Exist");
+}
+VM2359:2 2
+undefined
+arr = null;
+null
+if(arr){
+    console.log(arr.length);
+}
+else{
+    console.log("No Array Exist");
+}
+VM2389:5 No Array Exist
+undefined
+function add(x,y){
+    x = x || 0;
+    y = y || 0;
+    return x + y;
+}
+undefined
+add();
+0
+add(10);
+10
+add(10,20);
+30
+var obj = {id:1001, name:'Ram', salary:99999};
+undefined
+var arr = [10,20,30,40,50];
+undefined
+var e = arr[0];
+undefined
+e;
+10
+var x = obj.id;
+undefined
+x;
+1001
+arr;;
+(5) [10, 20, 30, 40, 50]
+var [x,,,y] = arr;
+undefined
+x;
+10
+y;
+40
+obj;
+{id: 1001, name: 'Ram', salary: 99999}
+var {name, salary} = obj;
+undefined
+name;
+'Ram'
+salary;
+99999
