@@ -1,0 +1,23 @@
+var obj = {id:1001, name:'Ram', salary:9999};
+undefined
+var x= obj.id;
+undefined
+var {id, salary} = obj;
+undefined
+id;
+1001
+salary;
+9999
+function printIt(obj2){
+    console.log(obj2.id, obj2.name, obj2.salary);
+}
+printIt(obj);
+VM477:2 1001 'Ram' 9999
+undefined
+function printIt({id, name, salary}){
+    console.log(id, name, salary);
+    
+}
+printIt(obj);
+VM567:2 1001 'Ram' 9999
+undefined
