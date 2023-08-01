@@ -1,0 +1,93 @@
+function add(x, y){
+    return x + y;
+}
+undefined
+const addition = (x,y)=>x+y;
+undefined
+typeof addition;
+'function'
+const addition2 = (x,y)=>{
+    console.log('X is ', x, 'Y is ', y);
+    return x+y;
+}
+undefined
+addition2(10,20);
+VM287:2 X is  10 Y is  20
+30
+add;
+ƒ add(x, y){
+    return x + y;
+}
+typeof add;
+'function'
+add(10,20);
+30
+var t = new add(10,20);
+undefined
+typeof t;
+'object'
+t;
+add {}
+t instanceof add;
+true
+var g = {};
+undefined
+g;
+{}
+t;
+add {}
+function add(x, y){
+    console.log('This is ',this);
+    return x + y;
+}
+undefined
+var t = new add(10,20);
+VM669:2 This is  add {}
+undefined
+t;
+add {}
+add(20,88);
+VM669:2 This is  Window {window: Window, self: Window, document: document, name: '', location: Location, …}
+108
+var f = new addition(10,20);
+VM851:1 Uncaught TypeError: addition is not a constructor
+    at <anonymous>:1:9
+(anonymous) @ VM851:1
+const adder = ()=>this;
+undefined
+adder();
+Window {window: Window, self: Window, document: document, name: '', location: Location, …}
+const rr = new adder();
+VM1000:1 Uncaught TypeError: adder is not a constructor
+    at <anonymous>:1:12
+(anonymous) @ VM1000:1
+var arr = [10,20,30,40,50,44,22,11];
+undefined
+arr.forEach(e=>console.log(e));
+VM1216:1 10
+VM1216:1 20
+VM1216:1 30
+VM1216:1 40
+VM1216:1 50
+VM1216:1 44
+VM1216:1 22
+VM1216:1 11
+undefined
+arr.find(e=>e==50);
+50
+arr.find(e=>e==500);
+undefined
+arr.findIndex(e=>e==50);
+4
+arr.findIndex(e=>e==500);
+-1
+arr.sort((a,b)=>a-b);
+(8) [10, 11, 20, 22, 30, 40, 44, 50]
+arr.sort((a,b)=>b-a);
+(8) [50, 44, 40, 30, 22, 20, 11, 10]
+const y = arr.map(e=>e+e*0.18);
+undefined
+y;
+(8) [59, 51.92, 47.2, 35.4, 25.96, 23.6, 12.98, 11.8]
+arr;
+(8) [50, 44, 40, 30, 22, 20, 11, 10]

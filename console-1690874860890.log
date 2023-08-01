@@ -1,0 +1,19 @@
+ async function doNetworkCall(){
+    const URL = 'https://gist.githubusercontent.com/kshirsagarps/36fade16fa39202715656ef487aaf7b0/raw/2b682e589ef283f06be42d2799dfa54f57794a6e/Pizza.json';
+    try{
+       
+    const response = await fetch(URL);
+    const object = await response.json(); // Deserialization
+    console.log('Object is ', object);
+    return object;
+    }
+    catch(err){
+        throw err;
+    }
+ }
+undefined
+const p = doNetworkCall();
+p.then(data=>console.log(data)).catch(e=>console.log(e));
+Promise {<pending>}
+VM19:7 Object is  {Vegetarian: Array(3)}
+VM217:2 {Vegetarian: Array(3)}Vegetarian: Array(3)0: assets: menu: [{…}]product_details_page: Array(1)0: url: "https://assets.zumepizza.com/public/aq89hll9.jpg"[[Prototype]]: Objectlength: 1[[Prototype]]: Array(0)[[Prototype]]: Objectclassifications: {vegetarian: true}id: 10menu_description: "Daiya vegan mozzarella, paired with fresh veggies"name: "Vegan Veggie"price: "23.95"toppings: (8) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}][[Prototype]]: Object1: {id: 11, name: 'Veggie Zupreme', price: '19.95', menu_description: 'The freshest, locally sourced veggies', classifications: {…}, …}2: {id: 12, name: 'The O.G.', price: '16.95', menu_description: 'The Margherita—with California flair', classifications: {…}, …}length: 3[[Prototype]]: Array(0)[[Prototype]]: Object
